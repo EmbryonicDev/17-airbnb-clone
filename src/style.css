@@ -63,5 +63,50 @@ body {
   line-height: 17.6px;
   color: #222222;
   margin-top: 0;
-  margin-bottom: 49px;
+}
+
+/* Card */
+.card {
+  margin-top: 49px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 37px;
+  position: relative;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 30px;
+}
+
+.cardPic {
+  height: 235px;
+  border-radius: 9px;
+}
+
+.card textNode {
+  position: absolute;
+  left: 0;
+  margin: 6px;
+  color: #222222;
+  font-weight: 400;
+  font-size: 10.24px;
+  background: #FFFFFF;
+  padding: 5px 6px 4px 6px;
+  border-radius: 2px;
+}
+
+.cardText {
+  font-size: 12px;
+  margin-top: 9px;
+}
+
+.cardText img {
+  height: 14px;
+}
+
+.rating span:last-of-type {
+  color: #918E9B
+}
+
+.price span:first-of-type {
+  font-weight: 600;
 }
