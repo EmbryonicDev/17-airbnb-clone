@@ -9,12 +9,19 @@ export default function App() {
     return (
       <Card
         key={item.id} // This is required to avoid errors
-        img={item.coverImg}
-        rating={item.stats.rating}
-        reviewCount={item.stats.reviewCount}
-        location={item.location}
-        title={item.title}
-        price={item.price}
+
+        // below can be done with small app
+        // img={item.coverImg}
+        // rating={item.stats.rating}
+        // reviewCount={item.stats.reviewCount}
+        // location={item.location}
+        // title={item.title}
+        // price={item.price}
+        // openSpots={item.openSpots}
+
+
+        // A better option
+        item={item}
       />
     )
   })
