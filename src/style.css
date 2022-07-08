@@ -66,11 +66,19 @@ body {
 }
 
 /* Card */
+#cardWrap {
+  display: flex;
+  gap: 19px;
+  padding: 0 37px;
+  overflow: hidden;
+  overflow-x: auto;
+
+}
+
 .card {
   margin-top: 49px;
   display: flex;
   flex-direction: column;
-  margin-left: 37px;
   position: relative;
   justify-content: flex-start;
   align-items: flex-start;
@@ -82,7 +90,7 @@ body {
   border-radius: 9px;
 }
 
-.card textNode {
+.imgBtn {
   position: absolute;
   left: 0;
   margin: 6px;
