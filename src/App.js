@@ -8,6 +8,7 @@ export default function App() {
   const cardEl = data.map(item => {
     return (
       <Card
+        key={item.id} // This is required to avoid errors
         img={item.coverImg}
         rating={item.stats.rating}
         reviewCount={item.stats.reviewCount}
