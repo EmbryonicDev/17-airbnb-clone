@@ -1,36 +1,23 @@
 import React from "react";
-import katie from '../assets/katie-zaferes.png'
 import star from '../assets/star.png'
 
-/*
-Challenge: Pass props to the Card component and display that data
-
-- img ("katie-zaferes.png")
-- rating ("5.0")
-- reviewCount (6)
-- country (Whatever you want)
-- title ("Life Lessons with Katie Zaferes")
-- price (136)
-
-*/
-
-export default function Card() {
+export default function Card(props) {
   return (
     <div className="card">
-      <img src={katie} alt='' className='cardPic'></img>
+      <img src={props.img} alt='' className='cardPic'></img>
       <textNode>SOLD OUT</textNode>
       <div className="cardText">
         <div className="rating">
           <img src={star} alt='' className="star"></img>
-          <span> 5.0</span>
-          <span> (6) • USA
-          </span>
+          <span> {props.rating}</span>
+          <span className="greyText"> ({props.reviewCount})</span>
+          <span className="greyText"> {props.country}</span>
         </div>
         <div className="title">
-          Life lessons with Katie Zaferes
+          {props.title}
         </div>
         <div className="price">
-          <span>From $136</span>
+          <span>From ${props.price}</span>
           <span> / person</span>
         </div>
       </div>
